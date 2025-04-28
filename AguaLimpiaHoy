@@ -1,79 +1,93 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>EcoAgua - Purificación Inteligente</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #e0f7fa;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #00796b;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav {
-      background: #004d40;
-      text-align: center;
-      padding: 0.5rem;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    footer {
-      background: #00796b;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoAgua - Filtración de agua</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('fondo.jpg'); /* Fondo de pantalla */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+            background-color: rgba(0,0,0,0.5);
+            margin: 20px;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
 <header>
-  <h1>EcoAgua</h1>
-  <p>Conectando Comunidades con Agua Pura</p>
+    EcoAgua 🌱💧
 </header>
 
 <nav>
-  <a href="#problemas">Problemas</a>
-  <a href="#soluciones">Soluciones</a>
-  <a href="#formulario">Formulario</a>
+    <a href="#inicio">Inicio</a>
+    <a href="#proyecto">Proyecto</a>
+    <a href="#contacto">Contacto</a>
 </nav>
 
-<section id="problemas">
-  <h2>Problemas Detectados</h2>
-  <p>Identificamos fuentes de agua contaminada en comunidades vulnerables de Trujillo y zonas cercanas.</p>
+<section id="inicio">
+    <h2>Bienvenido a EcoAgua</h2>
+    <p>Un proyecto para llevar agua limpia a más personas utilizando tecnología sostenible y accesible.</p>
 </section>
 
-<section id="soluciones">
-  <h2>¿Cómo Ayudamos?</h2>
-  <p>A través de la promoción de ecofiltros y la concientización, buscamos mejorar el acceso a agua segura.</p>
-  <p>Descarga nuestra <a href="#">Guía de Construcción de Ecofiltros</a> aquí.</p>
+<section id="proyecto">
+    <h2>Sobre el Proyecto</h2>
+    <p>Estamos desarrollando una solución digital para educar, informar y difundir la importancia de la purificación de agua mediante eco-filtros caseros.</p>
 </section>
 
-<section id="formulario">
-  <h2>Reporta un problema de agua</h2>
-  <p><a href="https://forms.gle/xxxxxxxxxxxxx" target="_blank">Completa el formulario aquí</a></p>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres saber más o colaborar con nosotros? Escríbenos a <strong>ecoagua.proyecto@gmail.com</strong></p>
 </section>
 
 <footer>
-  © 2025 EcoAgua | Proyecto de Responsabilidad Social Universitaria
+    © 2025 EcoAgua - Todos los derechos reservados.
 </footer>
 
 </body>
 </html>
+
