@@ -1,120 +1,128 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoAgua - Filtración de agua</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-            background-image: url('fondo.jpg'); /* Fondo general */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #ffffff;
-            text-shadow: 2px 2px 4px #000000;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoAgua - Filtración de agua</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('fondo.jpg'); /* Fondo de pantalla */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
 
-        header {
-            background-color: rgba(0, 100, 255, 0.7); /* Azul vivo */
-            padding: 40px 20px;
-            text-align: center;
-            font-size: 2.5em;
-            color: #ffffff;
-            text-shadow: 3px 3px 6px #000000;
-        }
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      text-align: center;
+      font-size: 2.5em;
+    }
 
-        nav {
-            background: linear-gradient(to right, #00b4d8, #0077b6); /* Celeste a azul fuerte */
-            padding: 15px;
-            text-align: center;
-        }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px;
+      text-align: center;
+    }
 
-        nav a {
-            color: #ffffff;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
+    nav a {
+      color: #00e6e6;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2em;
+    }
 
-        nav a:hover {
-            text-decoration: underline;
-            color: #90e0ef;
-        }
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-        section {
-            padding: 25px;
-            background-color: rgba(0, 0, 0, 0.6);
-            margin: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-        }
+    section {
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 30px;
+      border-radius: 15px;
+    }
 
-        #proyecto {
-            background-image: url('ecoagua.png'); /* Logo solo en sección proyecto */
-            background-size: 300px;
-            background-repeat: no-repeat;
-            background-position: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            min-height: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
+    footer {
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
 
-        #proyecto h2, #proyecto p {
-            background: rgba(0, 0, 0, 0.6);
-            padding: 10px;
-            border-radius: 10px;
-        }
+    .social-links a {
+      color: #00e6e6;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 1.5em;
+    }
 
-        section h2 {
-            color: #48cae4;
-        }
-
-        footer {
-            background: #023e8a;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-            color: #ffffff;
-        }
-    </style>
+    .social-links a:hover {
+      color: #00ffff;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    EcoAgua 🌱💧
+  EcoAgua 🌱💧
 </header>
 
 <nav>
-    <a href="pruebas.html">Pruebas</a>
-    <a href="encuestas.html">Encuestas</a>
-    <a href="#contacto">Contacto</a>
+  <a href="#inicio">Inicio</a>
+  <a href="#educacion">Educación</a>
+  <a href="#buenaspracticas">Buenas Prácticas</a>
+  <a href="#contacto">Contacto</a>
 </nav>
 
 <section id="inicio">
-    <h2>Bienvenido a EcoAgua</h2>
-    <p>Un proyecto para llevar agua limpia a más personas utilizando tecnología sostenible y accesible.</p>
+  <h2>Bienvenido a EcoAgua</h2>
+  <p>Un proyecto para llevar agua limpia a más personas utilizando tecnología sostenible y accesible.</p>
 </section>
 
-<section id="proyecto">
-    <h2>Sobre el Proyecto</h2>
-    <p>Estamos desarrollando una solución digital para educar, informar y difundir la importancia de la purificación de agua mediante eco-filtros caseros.</p>
+<section id="educacion">
+  <h2>¿Qué son los Ecofiltros?</h2>
+  <p>Los ecofiltros son dispositivos ecológicos que purifican el agua utilizando materiales naturales como cerámica, carbón activado y plata coloidal. Son una solución económica y sostenible para comunidades sin acceso a agua potable segura.</p>
+  
+  <h3>Importancia del Agua Limpia</h3>
+  <p>El agua limpia es esencial para la vida. Permite prevenir enfermedades, mejora la calidad de vida y promueve el desarrollo social y económico de las comunidades.</p>
+</section>
+
+<section id="buenaspracticas">
+  <h2>Buenas Prácticas para el Uso Responsable del Agua</h2>
+  <ul>
+    <li>Cierra la llave mientras te cepillas los dientes.</li>
+    <li>Reutiliza el agua para regar plantas o limpiar pisos.</li>
+    <li>Reporta y repara fugas de agua rápidamente.</li>
+    <li>Instala dispositivos ahorradores en duchas y grifos.</li>
+    <li>Evita el uso excesivo de agua en actividades diarias.</li>
+  </ul>
 </section>
 
 <section id="contacto">
-    <h2>Contacto</h2>
-    <p>¿Quieres saber más o colaborar con nosotros? Escríbenos a <strong>ecoagua.proyecto@gmail.com</strong></p>
+  <h2>Contacto</h2>
+  <p>¿Quieres saber más o colaborar con nosotros? Escríbenos a:</p>
+  <p><strong>ecoagua.proyecto@gmail.com</strong></p>
+
+  <h3>Síguenos en redes sociales</h3>
+  <div class="social-links">
+    <a href="https://www.facebook.com/" target="_blank">Facebook</a> |
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+    <a href="https://twitter.com/" target="_blank">Twitter</a> |
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+  </div>
 </section>
 
 <footer>
-    © 2025 EcoAgua - Todos los derechos reservados.
+  © 2025 EcoAgua - Todos los derechos reservados.
 </footer>
 
 </body>
 </html>
+
