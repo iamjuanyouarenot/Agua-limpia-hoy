@@ -13,7 +13,7 @@
         h1 {
             text-align: center;
         }
-        .encuesta {
+        .encuesta, .reporte {
             margin: 20px 0;
             padding: 15px;
             background: #b2ebf2;
@@ -27,6 +27,27 @@
         }
         .encuesta a:hover {
             color: #004d40;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea, button {
+            padding: 10px;
+            border: 1px solid #006064;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        button {
+            background-color: #006064;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #004d40;
         }
     </style>
 </head>
@@ -42,6 +63,17 @@
 <div class="encuesta">
     <p>Encuesta sobre acceso a agua potable:</p>
     <a href="https://forms.gle/yyyyyyyy" target="_blank">Responder Encuesta</a>
+</div>
+
+<!-- NUEVA SECCIÓN DE REPORTE -->
+<div class="reporte">
+    <h2>Reportar Problemas de Agua Contaminada</h2>
+    <form action="https://formsubmit.co/tu_correo@gmail.com" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+        <textarea name="problema" placeholder="Describe el problema observado" rows="5" required></textarea>
+        <button type="submit">Enviar Reporte</button>
+    </form>
 </div>
 
 </body>
