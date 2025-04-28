@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Encuestas - EcoAgua</title>
+    <title>Reporte de Problemas - EcoAgua</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -12,69 +12,72 @@
         }
         h1 {
             text-align: center;
-        }
-        .encuesta, .reporte {
-            margin: 20px 0;
-            padding: 15px;
-            background: #b2ebf2;
-            border-radius: 10px;
-            text-align: center;
-        }
-        .encuesta a {
-            text-decoration: none;
-            font-weight: bold;
-            color: #006064;
-        }
-        .encuesta a:hover {
-            color: #004d40;
+            margin-bottom: 30px;
         }
         form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            max-width: 500px;
+            background: #b2ebf2;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
             margin: 0 auto;
         }
-        input, textarea, button {
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea {
+            width: 100%;
             padding: 10px;
-            border: 1px solid #006064;
+            margin-top: 5px;
+            border: 1px solid #00acc1;
             border-radius: 5px;
-            font-size: 1em;
+        }
+        textarea {
+            resize: vertical;
+            height: 100px;
         }
         button {
-            background-color: #006064;
+            background: #00796b;
             color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
             cursor: pointer;
+            font-size: 1em;
+            width: 100%;
         }
         button:hover {
-            background-color: #004d40;
+            background: #004d40;
         }
     </style>
 </head>
 <body>
 
-<h1>Encuestas de EcoAgua</h1>
+<h1>Reporte de Problemas de Agua Contaminada</h1>
 
-<div class="encuesta">
-    <p>Encuesta sobre uso de eco-filtros:</p>
-    <a href="https://forms.gle/xxxxxxxx" target="_blank">Responder Encuesta</a>
-</div>
+<form action="#" method="POST" enctype="multipart/form-data">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
 
-<div class="encuesta">
-    <p>Encuesta sobre acceso a agua potable:</p>
-    <a href="https://forms.gle/yyyyyyyy" target="_blank">Responder Encuesta</a>
-</div>
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" required>
 
-<!-- NUEVA SECCIÓN DE REPORTE -->
-<div class="reporte">
-    <h2>Reportar Problemas de Agua Contaminada</h2>
-    <form action="https://formsubmit.co/tu_correo@gmail.com" method="POST">
-        <input type="text" name="nombre" placeholder="Tu nombre" required>
-        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
-        <textarea name="problema" placeholder="Describe el problema observado" rows="5" required></textarea>
-        <button type="submit">Enviar Reporte</button>
-    </form>
-</div>
+    <label for="lugar">Lugar de reporte (ciudad, barrio, comunidad):</label>
+    <input type="text" id="lugar" name="lugar" required>
+
+    <label for="problema">Describe el problema:</label>
+    <textarea id="problema" name="problema" required></textarea>
+
+    <label for="foto">Subir foto del problema (opcional):</label>
+    <input type="file" id="foto" name="foto" accept="image/*">
+
+    <button type="submit">Enviar Reporte</button>
+</form>
 
 </body>
 </html>
