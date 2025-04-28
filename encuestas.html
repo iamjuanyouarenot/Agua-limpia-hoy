@@ -1,83 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Reporte de Problemas - EcoAgua</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #e0f7fa;
-            padding: 20px;
-            color: #01579b;
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        form {
-            background: #b2ebf2;
-            padding: 20px;
-            border-radius: 10px;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        label {
-            display: block;
-            margin: 15px 0 5px;
-            font-weight: bold;
-        }
-        input[type="text"],
-        input[type="number"],
-        input[type="file"],
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border: 1px solid #00acc1;
-            border-radius: 5px;
-        }
-        textarea {
-            resize: vertical;
-            height: 100px;
-        }
-        button {
-            background: #00796b;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            cursor: pointer;
-            font-size: 1em;
-            width: 100%;
-        }
-        button:hover {
-            background: #004d40;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Encuestas y Reportes - EcoAgua</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #e0f7fa;
+      padding: 20px;
+      color: #01579b;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .btn-form {
+      display: inline-block;
+      background: #006064;
+      color: #fff;
+      padding: 15px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .btn-form:hover {
+      background: #004d40;
+      transform: scale(1.05);
+    }
+    .note {
+      text-align: center;
+      margin-top: 20px;
+      font-style: italic;
+    }
+    nav {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #006064;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #004d40;
+    }
+  </style>
 </head>
 <body>
 
-<h1>Reporte de Problemas de Agua Contaminada</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pruebas.html">Pruebas</a>
+    <a href="encuestas.html">Encuestas</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
 
-<form action="#" method="POST" enctype="multipart/form-data">
-    <label for="nombre">Nombre completo:</label>
-    <input type="text" id="nombre" name="nombre" required>
+  <h1>Encuestas y Reportes de EcoAgua</h1>
 
-    <label for="edad">Edad:</label>
-    <input type="number" id="edad" name="edad" required>
+  <p style="text-align:center;">
+    Para responder la encuesta y subir fotos de problemas de agua contaminada, haz clic en el botón:
+  </p>
 
-    <label for="lugar">Lugar de reporte (ciudad, barrio, comunidad):</label>
-    <input type="text" id="lugar" name="lugar" required>
+  <div style="text-align:center;">
+    <a class="btn-form"
+       href="https://docs.google.com/forms/d/e/1FAIpQLSfe-NZ3WnpgnWaJmlp-W9iytEDcsHOGZat0E9DTcLVsvyoAxg/viewform?usp=dialog"
+       target="_blank">
+      Abrir Formulario de EcoAgua
+    </a>
+  </div>
 
-    <label for="problema">Describe el problema:</label>
-    <textarea id="problema" name="problema" required></textarea>
-
-    <label for="foto">Subir foto del problema (opcional):</label>
-    <input type="file" id="foto" name="foto" accept="image/*">
-
-    <button type="submit">Enviar Reporte</button>
-</form>
+  <p class="note">
+    (Se abrirá una nueva pestaña para que puedas completar todas las preguntas y subir fotos)
+  </p>
 
 </body>
 </html>
