@@ -203,4 +203,61 @@
 
   </div>
 </section>
+      <!-- Librería Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<section id="comparacion">
+  <h2>Comparación de Eficiencia entre Prototipos</h2>
+  <p>Este gráfico muestra la comparación entre los tiempos de filtrado y niveles de turbidez de los tres prototipos.</p>
+
+  <canvas id="graficoEficiencia" width="600" height="400" style="background-color: #fff; border-radius: 10px; padding: 20px;"></canvas>
+
+  <script>
+    const ctx = document.getElementById('graficoEficiencia').getContext('2d');
+    const grafico = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Prototipo A', 'Prototipo B', 'Prototipo C'],
+        datasets: [
+          {
+            label: 'Tiempo de filtrado (min)',
+            data: [14, 18, 15],
+            backgroundColor: 'rgba(0, 123, 255, 0.7)'
+          },
+          {
+            label: 'Turbidez antes (NTU)',
+            data: [13.5, 11.0, 12.8],
+            backgroundColor: 'rgba(255, 99, 132, 0.7)'
+          },
+          {
+            label: 'Turbidez después (NTU)',
+            data: [2.1, 3.0, 1.8],
+            backgroundColor: 'rgba(75, 192, 192, 0.7)'
+          }
+        ]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true,
+            title: {
+              display: true,
+              text: 'Valor'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'top'
+          },
+          title: {
+            display: true,
+            text: 'Desempeño de los Prototipos de Ecofiltro'
+          }
+        }
+      }
+    });
+  </script>
+</section>
 
